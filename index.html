@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作業日報 アプリケーション | サポート・プライバシーポリシー</title>
+    <!-- モダンなフォントを導入 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-bg: #eff6ff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Outfit', 'Noto Sans JP', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 視覚的なヘッダー背景グラデーション */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -2rem auto 4rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 1.5rem;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-sub);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            padding: 2rem;
+        }
+
+        @media (max-width: 640px) {
+            header { padding: 3rem 1rem; border-radius: 0; }
+            header h1 { font-size: 2rem; }
+            .card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>作業日報 Apps</h1>
+        <p>関係スタッフ専用・現場作業の管理をよりシンプルに。</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. アプリ概要 -->
+        <div class="card">
+            <h2>アプリの概要</h2>
+            <p>本アプリケーションは、安全にお仕事の記録を残し、共有・確認等を行うための、従業員様および指定関係会社様向けの専用業務アプリケーションです。</p>
+            <ul>
+                <li>日報データの作成、履歴閲覧、修正対応</li>
+                <li>出勤・車両の利用情報のスムーズな管理</li>
+                <li>スプレッドシート等の各種データベース連携</li>
+            </ul>
+        </div>
+
+        <!-- 2. サポート・お問い合わせ（審査に必須！） -->
+        <div class="card" id="support">
+            <h2>サポートとお問い合わせ</h2>
+            <p>アプリの不具合、動作不良、ログインできない場合やご質問等がある場合は、以下より管理者までご連絡ください。</p>
+            <!-- ⬇️ あなたのメールアドレスを記入してください ⬇️ -->
+            <a href="mailto:support@example.com" class="btn">サポートに連絡する</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-sub);">
+                ※ご連絡の際は、ご利用中のユーザー名または画面情報をお知らせください。
+            </p>
+        </div>
+
+        <!-- 3. プライバシーポリシー（審査に必須！） -->
+        <div class="card">
+            <h2>プライバシーポリシー</h2>
+            <h3>第一条（個人情報の取得方針）</h3>
+            <p>本アプリは、ユーザーの日報入力データの保存やアカウント管理のために必要な情報のみを取得します。</p>
+            <ul>
+                <li>アカウント認証情報、氏名（従業員名）</li>
+                <li>入力された業務日報にかかわる情報など</li>
+            </ul>
+
+            <h3>第二条（利用目的）</h3>
+            <p>取得した情報は、業務上の報告内容の集計・管理・データ同期以外の目的で利用（第三者への提供）することはございません。</p>
+
+            <h3>第三条（データの安全管理）</h3>
+            <p>データは厳重なセキュリティで管理され、関係者のアクセス権限を持ったメンバーのみが閲覧可能です。</p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 作業日報管理システム. All rights reserved.
+    </footer>
+
+</body>
+</html>
 
